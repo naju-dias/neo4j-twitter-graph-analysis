@@ -1,7 +1,7 @@
 MATCH (autor: Aluno {ru: "<ID>"})
 CALL {
 MATCH (t:Tweet)-[: POSSUI_TAG]→(tag: Hashtag)
-// Filtro para ignorar retweets e respostas (tweets não originais)
+// Filtro para ignorar retweets e respostas
 WHERE NOT t: Retweet AND NOT t: Replied
 RETURN tag, count(t) AS total
 ORDER BY total DESC
