@@ -38,10 +38,12 @@ Os dados foram importados a partir de arquivos JSON utilizando a biblioteca APOC
 
 Exemplo de consulta Cypher utilizada na importação:
 
+```cypher
 CALL apoc.load.json("file:///tweets.json")
 YIELD value
 MERGE (u:User {id:value.user.id})
 MERGE (t:Tweet {id:value.id})
+```
 
 ## Análise 1 — Descoberta da Hashtag Principal
 
