@@ -17,6 +17,8 @@ A estrutura em grafo permite explorar essas conexões diretamente por meio dos r
 
 ## 🕸️ Modelagem do Grafo
 
+![Visualização do grafo no Neo4j](./imagens/grafo_hashtag.png)
+
 Os dados foram representados por diferentes tipos de nós de acordo com o papel de cada entidade no conjunto analisado.
 
 ### Nós
